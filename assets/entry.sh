@@ -7,10 +7,7 @@ if [ ! -f /opt/alfresco/alf_data/foo.txt ]; then
     bash /install.sh;
     bash /tunerepo.sh;
     bash /modifinitpass.sh;
-#    /opt/alfresco/alfresco.sh start;
-#    /waitready.sh;
-#    /opt/alfresco/alfresco.sh stop;
-     if [ -z ${CONTAINER_FUNCTION+x} ]; then 
+     if [ -z ${CONTAINER_FUNCTION+x} ]; then
 	echo "Tomcat and Postgres running in same container"; 
      else 
         echo "Creating DB from alfresco contaner";    
