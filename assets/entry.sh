@@ -16,16 +16,11 @@ if [ ! -f /opt/alfresco/alf_data/foo.txt ]; then
         echo "Creating DB from alfresco contaner";    
         export PGPASSWORD=mysecretpassword;/opt/alfresco/postgresql/bin/psql -h "$DB_CONTAINER_NAME" -p "5432" -U postgres < /create.sql
     fi
-    echo "After fi1";   
-    bash /tunesolr.sh;    
-    echo "After fi2";  
+    bash /tunesolr.sh;
     touch /opt/alfresco/alf_data/foo.txt;
-    echo "After fi3"
 fi
-    echo "After fi4";
 # setting values for all the "-e ALF_xxx=..." parameters provided at startup
 bash /tuneglobal.sh
-    echo "After fi5";
 # start postgres and alfresco separately
 if [ -z ${CONTAINER_FUNCTION+x} ]; then 
 	echo "Tomcat and Postgres running in same container"; 
@@ -35,7 +30,7 @@ else
         echo "Running only $CONTAINER_FUNCTION";
         /opt/alfresco/alfresco.sh start $CONTAINER_FUNCTION;
 fi
-    echo "After fi6";
 
 # loop so container does not exit
 while true;do sleep 5;done;
+#TODO: This seems unnecessary
