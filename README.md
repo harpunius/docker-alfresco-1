@@ -1,6 +1,6 @@
-# docker-alfresco
+# docker-alfresco-volumes
 
-Generate a docker Ubuntu based image for Alfresco Community v5.2.0 with Alfresco Share v5.2.f (see http://dl.alfresco.com/release/community/201707-build-00028/alfresco-community-installer-201707-linux-x64.bin) 
+Generate a docker Ubuntu based image for Alfresco Community v5.2.0 (see http://dl.alfresco.com/release/community/201707-build-00028/alfresco-community-installer-201707-linux-x64.bin) 
 
 ## Description
 
