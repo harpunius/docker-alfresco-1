@@ -58,7 +58,7 @@ A ***"your-docker-compose.yml"*** can be used as follows
 version: '3'
 services:
    alfresco:
-       image: "pdubois/docker-alfresco:master"
+       image: "docker pull harpunius/alfresco:latest"
        volumes:
         - /var/alf_data:/opt/alfresco/alf_data
 ```
